@@ -50,9 +50,9 @@ if "%version%"=="Microsoft Windows 11 Home" (
     exit /b 1
 )
 
-slmgr /ipk %KEY%
-slmgr /skms kms8.msguides.com
-slmgr /ato
+WScript.exe slmgr /ipk %KEY%
+WScript.exe slmgr /skms kms8.msguides.com
+WScript.exe slmgr /ato
 
 endlocal
 pause
